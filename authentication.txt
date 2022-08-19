@@ -1,0 +1,46 @@
+
+
+1. sign up/register    ---> store in our DB
+     - email,
+     - password, 
+     - age
+
+2. login               ---> verify both email and password -> match ? login successful:invalid credentials
+     -email
+     -password
+
+     --> generate token using jwt and send back to the user;
+     
+
+3.  profile
+     - token --> verify token ? access the route : login again 
+
+4. Hashing the password 
+
+
+
+
+1. Sign up ;              -----> hash password using bcrypt ----> store in DB
+email
+password
+mobile_no;
+city;
+.... other info
+
+
+2. login :             ---->  verify if email and password is same as while signing up
+email                  ---> bcrypt to compare if hash of this password === hash of password while signing up
+password               ----> if password and email is correct - we generate jwt token and send token to client
+
+
+3. /dashboard            ----> need token from client, query, headers ? if token matches?1 : 0
+
+
+
+
+//Authorisation
+
+
+
+
+
